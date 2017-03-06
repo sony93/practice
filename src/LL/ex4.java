@@ -4,7 +4,7 @@ package LL;
  * Created by sony on 16-11-10.
  */
 public class ex4 {
-    public static void main(String args[]){
+    public static void main(String[] args){
         String s = "We are happy.";
         char c_old[] = s.toCharArray();
         char c_new[] = new char[100];

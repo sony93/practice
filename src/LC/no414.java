@@ -1,10 +1,10 @@
-package LD;
+package LC;
 
 /**
  * Created by sony on 16-11-13.
  */
 public class no414 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         int[] array = {1,2,-2147483648};
         System.out.println(Third_Maximum_Number(array));
     }

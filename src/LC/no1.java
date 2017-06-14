@@ -6,7 +6,7 @@ import java.util.HashMap;
  * Created by sony on 17-2-23.
  */
 public class no1 {
-    public static void main(String args[]){
+    public static void main(String[] args){
 //        int[] result = new int[2];
         int[] nums = new int[]{2,7,11,15};
         int target = 9;

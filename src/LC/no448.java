@@ -8,8 +8,8 @@
 // */
 //public class no448 {
 //    public static void main(String[] args) {
-//        int[] array = {4,3,2,7,8,2,3,1};
-//        System.out.println(disappearnums(array));
+//        int[] Learn_algorithm.sort.array = {4,3,2,7,8,2,3,1};
+//        System.out.println(disappearnums(Learn_algorithm.sort.array));
 //    }
 //
 //    public static List<Integer> disappearnums(int[] nums){

@@ -1,4 +1,4 @@
-package Learn_algorithm;
+package Learn_algorithm.sort;
 
 /**
  * Created by Administrator on 2017/3/29.

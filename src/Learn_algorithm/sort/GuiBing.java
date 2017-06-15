@@ -1,4 +1,4 @@
-package sort;
+package Learn_algorithm.sort;
 
 import java.util.Arrays;
 
@@ -49,11 +49,11 @@ public class GuiBing {
     public static void main(String[] args){
         int[] array = {2,3,9,4,1,8,6};
         /** 0 + 6 = 6 ;mid = 3
-         * sort(array, 0, 3) sort(array, 4, 6)
+         * Learn_algorithm.sort(Learn_algorithm.sort.array, 0, 3) Learn_algorithm.sort(Learn_algorithm.sort.array, 4, 6)
          * 0 + 3 = 3 ; mid = 1
-         * sort(array, 0, 1)
+         * Learn_algorithm.sort(Learn_algorithm.sort.array, 0, 1)
          * mid = 0
-         * sort(array, 0, 0)
+         * Learn_algorithm.sort(Learn_algorithm.sort.array, 0, 0)
          *
          */
         sort(array,0,array.length - 1);

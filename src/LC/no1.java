@@ -13,7 +13,7 @@ public class no1 {
 
         System.out.println(twoSum(nums,target)[0] + "haha" + twoSum(nums,target)[1]);
 //        guibing a= new guibing();
-//        guibing.sort(nums, 0, nums.length - 1);
+//        guibing.Learn_algorithm.sort(nums, 0, nums.length - 1);
     }
     //hashtable 时间复杂度O(n) 空间复杂度O(n)
     public static int[] twoSum(int[] nums, int target){

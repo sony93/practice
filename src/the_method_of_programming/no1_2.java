@@ -1,6 +1,6 @@
 package the_method_of_programming;
 
-import sort.GuiBing;
+import Learn_algorithm.sort.GuiBing;
 
 import java.util.Arrays;
 

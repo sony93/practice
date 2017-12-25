@@ -3,34 +3,32 @@ package JZ_offer;
 /**
  * Created by sony on 17-12-7.
  */
-public class no4 {
-    public static String replaceSpace(StringBuffer str) {
-        int a = str.length();
-        int space_num = 0;
-        for (int i = 0; i < str.length(); i++){
-            if(str.charAt(i) == ' ')
-                space_num++;
-        }
-        int pre_last = a - 1;
-        int newlength = str.length() + space_num * 2;
-        str.setLength(newlength);
-        int now_last = str.length() - 1;
-        while (pre_last >= 0 && pre_last < now_last){
-            if(str.charAt(pre_last) == ' '){
-                str.setCharAt(now_last--, '0');
-                str.setCharAt(now_last--, '2');
-                str.setCharAt(now_last--, '%');
-                pre_last--;
-            }
-            else {
-                str.setCharAt(now_last--, str.charAt(pre_last--));
-            }
-        }
-        return str.toString();
-    }
 
-    public static void main(String[] args){
-        StringBuffer a = new StringBuffer("hello world");
-        System.out.println(replaceSpace(a));
+/**
+ * 二维数组查找
+ * 杨氏矩阵：每一行自左向右递增，每一列自上向下递增。
+
+ 题目：输入一个杨氏矩阵和一个整数，判断这个数是在杨氏矩阵中出现。
+
+ 思路：因为每行是递增的，每列也是递增的，我们可以将这个数与最右上（左下）角的元素进行比较。
+ */
+public class no4 {
+    public static boolean FindInPartiallySortedMatrix(int[][] array, int target){
+        if (array == null)
+            return false;
+
+        int hang = array.length;
+        int lie = array[0].length;
+        int i = 0;
+        int j = lie - 1;
+        while (i < hang && j >= 0){
+            if(array[i][j] == target)
+                return true;
+            else if (array[i][j] > target)
+                j--;
+            else if(array[i][j] < target)
+                i++;
+        }
+        return false;
     }
 }

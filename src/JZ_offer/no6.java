@@ -27,6 +27,19 @@ public class no6 {
         return arrayList;
     }
 
+    //递归
+    public static ArrayList<Integer> printListFromTailToHead2(ListNode listNode) {
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        ListNode node = listNode;
+        if(node != null){
+            if(node.next != null){
+                arrayList = printListFromTailToHead2(node.next);
+            }
+            arrayList.add(node.val);
+        }
+        return arrayList;
+    }
+
     public static void main(String[] args){
         ListNode listNode = new ListNode(1);
         System.out.println(printListFromTailToHead(listNode));

@@ -17,16 +17,14 @@ public class no204 {
     public int countPrimes(int n) {
         boolean[] notPrime = new boolean[n];
         int count = 0;
-        for (int i = 2; i < Math.sqrt(n); i++){
+        for (int i = 2; i < n; i++){
             if(notPrime[i] == false){
                 count++;
                 for (int t = 2; t * i < n; t++){
-                    notPrime[t] = true;
+                    notPrime[t * i] = true;
                 }
             }
         }
         return count;
     }
-
-
 }

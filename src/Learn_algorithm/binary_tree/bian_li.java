@@ -64,6 +64,30 @@ public class bian_li {
         }
     }
 
+    public static void front_xunhan(TreeNode treeNode){
+        System.out.println(treeNode.val);
+        if(treeNode.left != null)
+            front_xunhan(treeNode.left);
+        if(treeNode.right != null)
+            front_xunhan(treeNode.right);
+    }
+
+    public static void mid_xunhan(TreeNode treeNode){
+        if(treeNode.left != null)
+            mid_xunhan(treeNode.left);
+        System.out.println(treeNode.val);
+        if(treeNode.right != null)
+            mid_xunhan(treeNode.right);
+    }
+
+    public static void behind_xunhan(TreeNode treeNode){
+        if(treeNode.left != null)
+            behind_xunhan(treeNode.left);
+        if(treeNode.right != null)
+            behind_xunhan(treeNode.right);
+        System.out.println(treeNode.val);
+    }
+
     public static void main(String[] args){
         TreeNode t1 = new TreeNode(1);
         t1.left = new TreeNode(2);
@@ -71,6 +95,6 @@ public class bian_li {
         t1.left.left = new TreeNode(4);
         t1.left.right = new TreeNode(5);
         t1.right.left = new TreeNode(6);
-        behind(t1);
+        mid_xunhan(t1);
     }
 }
